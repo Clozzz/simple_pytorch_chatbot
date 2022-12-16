@@ -1,0 +1,72 @@
+This chat is the result of 10,000 iterations over the IMDB movie line pairs in addition to ~4000 question and answer pairs from Yahoo! Answers.
+
+Still lacking noticeable understanding of inputs. Additionally, it appears that number and symbols are not recognized, this is because the python script pulls them.
+Should I update the script to allow for numbers or momentarily remove arithmetic? Additionaly the input examination functions strip special characters so mental note that
+adding a question mark does not aid in the presenting the question currently.
+
+> Hello
+Bot: hello . . . van .
+> What is your name?
+Bot: i m not leaving . . .
+> Who are you?
+Bot: i m your son . i m you .
+> What are you?
+Bot: i m your husband . you are .
+> Where are you?
+Bot: i m here . you . .
+> Give me a name.
+Bot: you re a real friend . .
+> Who am I speaking with?
+Bot: pauline . and your friend . .
+> Hello, Pauline
+Bot: hello . tom . ya ya .
+> What is 1 + 1
+Bot: the children . on the shoulder .
+> What is 2 + 2
+Bot: the children . on the shoulder .
+> What is
+Bot: the children . on the shoulder .
+> what is two plus two
+Bot: what are you talking about ? murder ?
+> what is one plus one
+Bot: i m going back in a minute .
+> What color is a zebra?
+Bot: no . in your room .
+> How do you eat an apple?
+Bot: . . . . .
+> How do you climb a tree?
+Bot: i don t know . and .
+> a
+Bot: a nigger . a cab .
+> b
+Bot: hi . is over . over .
+> c
+Bot: you re right . and goodbye .
+> d
+Bot: i m sorry . . . .
+> e
+Bot: you re a hero . and goodbye .
+> f
+Bot: i m sorry . and you re
+> g
+Bot: i m not going to get some .
+> h
+Bot: we re screwed . and shootin .
+> i
+Bot: i m sorry . and you were .
+> j
+Bot: that s right . and move !
+> k
+Bot: it s a surprise . .
+> l
+Bot: u hell u u . . .
+> m
+Bot: no . and i m nervous .
+> n
+Bot: yes . and and .
+> o
+Bot: in . and on them .
+> p
+Bot: i ll be there soon .
+> q
+

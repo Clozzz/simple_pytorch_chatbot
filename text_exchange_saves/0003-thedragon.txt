@@ -1,0 +1,63 @@
+This is a result of changing the max word count to 15 and running for 10000 iterations. A similar experiment is underway using the same data set and doing 25 thousand iterations with a
+ 12 word count. It seems that word count does change the amount of average loss lowered per iteration. Average loss achieved at the end of training should be noted in these text
+ documents from now on. Standard format for noting what created the AI:
+
+Number of Training Iterations: 10000
+Pairs of Input Data Trained On: 225279 sentence pairs
+Average Loss Started:
+Average Loss Ended:
+
+
+
+> Hello
+Bot: i m sorry . s got to be here . s . s . indian s
+> What is your name?
+Bot: the dragon . . . . . . . . .
+> Who are you?
+Bot: i m sorry . i m a man who s my friend . angels s dead .
+> Where are you?
+Bot: i m not . s . s . s . s . s .
+> What are you?
+Bot: i m not . i m not going to be a bad question . a black .
+> Are you aware?
+Bot: yes . s . s . s . s . s . s .
+> How do you eat an apple?
+Bot: i don t know . s . i m not a writer . good . good
+> How do you climb a tree?
+Bot: i m not a fool . i m not a fool . a young man . a
+> a
+Bot: and you can t get it . s got a break . a man s .
+> b
+Bot: and you re going to be here ? ! ! ! ! ! !
+> c
+Bot: i m sorry . i can t hear you . s . . . .
+> d
+Bot: what ? ? ? ? ? ? ? ? ? ?
+> e
+Bot: what ? ? ? ? ? ? ? ? ? ?
+> f
+Bot: yes . . . . . . . . .
+> g
+Bot: what ? ? ? ? ? ? ? ? ? ?
+> h
+Bot: i m not going to marry you . i m going to get my money .
+> 
+Bot: null
+> i
+Bot: you re not going to be a fool . energy s out of my life .
+> j
+Bot: what ? ? ? ? ? ? ? ? ? ?
+> k
+Bot: what ? ? ? ? ? ? ? ? ? ?
+> l
+Bot: what do you want ? what ? a young woman ? a young man . a
+> m
+Bot: i m not a fool . i m going to be a little bit late .
+> n
+Bot: what ? ? ? ? ? ? ? ? ? ?
+> o
+Bot: what ? ? ? ? ? ? ? ? ? ?
+> p
+Bot: i m sorry . i m not a total professional . a man s got a broken .
+> q
+

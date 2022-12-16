@@ -1,0 +1,115 @@
+This one was training all night, I'm very curious to see how it names itself. I am preemptively creating the text file that will store the conversation with the data collected for
+further analysis. After this I think it will likely be best to start incorporating more data.
+
+Would you look at that? Viktor came back, but it's Vic this time, specifically Victor Frankenstein the Bowler. LOL!
+
+This one clearly seems to be more coherent, actually producing some reasonable responses. 
+
+
+Number of Training Iterations: 25000
+Pairs of Input Data Trained On: 225279 sentence pairs
+Max Sentence Length to Consider: 15
+Average Loss Started:
+Average Loss Ended: Iteration: 25000; Percent complete: 100.0%; Average loss: 1.4252
+
+> Hello
+Bot: hello . . ? . . . . .
+> Who are you?
+Bot: i m the bowler . . . . . . . .
+> Where are you?
+Bot: takin you ma am . . t really mean i m here .
+> What are you?
+Bot: i m not cheating . i m not bad . . .
+> What time is it?
+Bot: eight o clock . and there . go . . .
+> What is your name?
+Bot: victor frankenstein . . . . . . . .
+> Frankenstein's monster?
+Bot: i believe it . two hours . . . . . . .
+> How do you eat an apple?
+Bot: a pretty a pretty good friends . a rule of a bit of
+> How do you climb a tree?
+Bot: okay . . . . . . . . . .
+> What color is a zebra?
+Bot: kurtz . . has a wine . has no wine .
+> This is random
+Bot: we ve got to get out of here . . t be long
+> What is one plus one?
+Bot: you look forward to the scale sir . .
+> what is the answer to life the universe and everything
+Bot: a fake of a moment
+> a
+Bot: a man who has a body out of the whole thing
+> b
+Bot: my dad s in my room . . . . . .
+> c
+Bot: you re not gonna kill me . you re making me feel great .
+> d
+Bot: he s dead . . . knows . . .
+> e
+Bot: we ll get them out of here . . .
+> f
+Bot: tell him i m going to jail for it . .
+> g
+Bot: i m a professional ! i m a man !
+> h
+Bot: i m not surprised . killed him . . . . .
+> i
+Bot: you re not ? . . . . .
+> j
+Bot: but you could ve got a . .
+> k
+Bot: who are you ? and your dad . you . .
+> l
+Bot: you d be surprised in a few minutes . fire you . .
+> m
+Bot: you know what i m doing ? ? .
+> n
+Bot: dress ? . . . . . . .
+> o
+Bot: you ll never get along with him . hold you !
+> p
+Bot: this is bullshit . s not going to work . .
+> q
+
+
+Did another round with Vic to test different methods of changing output without changing context of what is being said.
+Cloz: Hello
+Bot: hello . . . . . . .
+Cloz: Hello
+Bot: hello . . . . . .
+Cloz: Hello a
+Bot: who is this ? the last time you got .
+Cloz: Hello b
+Bot: hello charlie i m here . tank .
+Cloz: Hello c
+Bot: hello bill . . . . . . .
+Cloz: Hello d
+Bot: who s this ? morning ? ? ? ?
+Cloz: Hello 1
+Bot: hello . . . . . . .
+Cloz: Hello 2
+Bot: hello . . . . . . .
+Cloz: hello one
+Bot: hello . . . . . .
+Cloz: hello two
+Bot: hello . day . . . . .
+Cloz: hello three
+Bot: hello . . . . . .
+Cloz: hellow four
+Error: Encountered unknown word.
+Cloz: hello four
+Bot: hello ? five ? ? ? ? !
+Cloz: hello five
+Bot: hello . . . . . .
+Cloz: hello six
+Bot: hello . . . . . .
+Cloz: hello seven
+Bot: what ? band ? ? ? ? ?
+Cloz: hello eight
+Bot: hello . . . . . .
+Cloz: hello nine
+Bot: hello . . hello . . . .
+Cloz: hello ten
+Bot: hello charlie . . . . . .
+

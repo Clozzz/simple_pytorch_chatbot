@@ -1,0 +1,25 @@
+Unit 0001 is a result of upping the max word count to 50, this was clearly too much and the number training iterations, 500 specifically, where obviously too low.
+
+Because of that lack of training iterations the bot simply repeats lines 1 after another with no variance as all things are weighted similarly in the python dictionary.
+
+>:  Hello
+0001: i m not a other . s the other . s the other . s the other . s the other . s the other . s the other . s the other . s the other . s the other
+>:  What is your name?
+0001: i m not the other . s the other . s the other . s the other . s the other . s the other . s the other . s the other . s the other . s the other
+>:  Who are you?
+0001: i m not a other . s not the other . s the other . s the other . s the other . s the other . s the other . s the other . s the other . s the
+>:  test
+0001: i m not a other . s the other . s the other . s the other . s the other . s the other . s the other . s the other . s the other . s the other
+>:  a
+0001: i m not a other . s the other . s the other . s the other . s the other . s the other . s the other . s the other . s the other . s the other
+>:  b
+0001: i m not a other . s the other . s the other . s the other . s the other . s the other . s the other . s the other . s the other . s the other
+>:  c
+0001: i m not a other . s the other . s the other . s the other . s the other . s the other . s the other . s the other . s the other . s the other
+>:  d
+0001: i m not a other . s the other . s the other . s the other . s the other . s the other . s the other . s the other . s the other . s the other
+>:  f
+0001: i m not a other . s the other . s the other . s the other . s the other . s the other . s the other . s the other . s the other . s the other
+>:  g
+0001: i m not a other . s the other . s the other . s the other . s the other . s the other . s the other . s the other . s the other . s the other
+

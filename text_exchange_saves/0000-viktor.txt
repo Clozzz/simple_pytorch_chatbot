@@ -1,0 +1,114 @@
+This is unit 0000, a result of 4000 training iterations on IMDBs top 50 movies JSON data included with PyTorch's chatbot tutorial.
+
+The tar file for this is still saved in the movie corpus dir, though in future unit iterations I will have a "master corpus" that will contain a master list of formatted pairs similarly
+noted in the pytorch tutorial.
+
+> Hello
+Bot: hello . singer . singer .
+> Hello
+Bot: hello . singer . singer .
+> Test
+Bot: i m sorry . s daughter .
+> test
+
+Notice the repeating of lines on the same input. Will need to figure that out at some point. More natural language would allow for alternate responses.
+
+Bot: i m sorry . s daughter .
+> Say something else.
+Bot: what ? ? ? ? ?
+> How would you eat an apple?
+Bot: i don t know . . !
+> What is your name?
+Bot: victor . is my name . .
+> What is 2 + 2 
+Bot: i m sorry i m sorry !
+> What is 1 + 1
+Bot: i m sorry i m sorry !
+> What is 345 + 3954
+Bot: i m sorry i m sorry !
+> what is this + that
+Bot: i m not going to kill you .
+
+Important to additionally note that numbers and special characters are stripped by the regex in the python script - did not notice that on initial run through
+of the imported code from the PyTorch tutorial.
+
+> I hope not
+Bot: you re not . . ! !
+> I'm not what?
+Bot: i m not crying . ! !
+> Good, I don't want you to cry.
+Bot: i ll be back . . .
+> Arnold S
+Error: Encountered unknown word.
+
+So this is my own neural net firing off, but I have an association of the phrases "Why do you cry?" and "I'll be back." from the Terminator series. Funny that this is almost
+similar, I wonder if the terminator movies where in that data set?
+
+> I'll be back
+Bot: i ll be back .
+> Will you be back?
+Bot: i m not sure . . !
+> Why not?
+Bot: because you re still here . things .
+> What is the answer to life the universe and everthing?
+Error: Encountered unknown word.
+> What is the answer to life the universe and everything?
+Bot: i don t know . . !
+> Who are you?
+Bot: i m the girl . . !
+> Are you aware?
+Bot: no . s over . ! !
+> Spam
+Error: Encountered unknown word.
+> random
+Bot: what ? ? ? ? ?
+> this is random
+Bot: no . is very clever .
+> What is your name?
+Bot: victor . is my name . .
+> Where are you?
+Bot: i m here . you .
+> Where is here?
+Bot: in the bathroom . s here .
+> Where is the bathroom?
+Bot: it s just a stalker . . .
+> Who is a stalker?
+Bot: i don t know . . .
+> 
+Bot: you re a beautiful kid . .
+> 
+Bot: you re a beautiful kid . . 
+> a
+Bot: a little . on the table .
+> b
+Bot: i m going to kill him ! !
+> c
+Bot: i m sorry
+> d
+Bot: i m sorry . on the table .
+> e
+Bot: i m not sure .
+> f
+Bot: yes sir . on the table .
+> g
+Bot: yeah . s over . ! !
+> h
+Bot: you re a beautiful man . !
+> i
+Bot: you re a good girl .
+> j
+Bot: i m sorry . on your own .
+> k
+Bot: what ? ? ? ? ?
+> l
+Bot: i m sorry . times .
+> m
+Bot: i m sorry !
+> n
+Bot: what ? ? ? ? ?
+> o
+Bot: what ? ? ? ? ?
+> p
+Bot: what ? ? ? ? ?
+> q
+
