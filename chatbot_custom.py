@@ -1,7 +1,3 @@
-# and put in a ``data/`` directory under the current directory.
-#
-# After that, let’s import some necessities.
-#
 
 from __future__ import absolute_import
 from __future__ import division
@@ -25,7 +21,7 @@ import math
 import json
 
 # VARIABLES
-Max_Sentence_Length = 13    #How long the sentence output will allow.
+Max_Sentence_Length = 50    #How long the sentence output will allow.
 Min_Word_Count = 3          #Minimum word count for trimming.
 Number_Iterations = 15000   #How many iterations over  the training data.
 
@@ -529,7 +525,20 @@ def evaluate(encoder, decoder, searcher, voc, sentence, max_length=MAX_LENGTH):
     decoded_words = [voc.index2word[token.item()] for token in tokens]
     return decoded_words
 
+def makeLogFile(voc):
+    if (os.path.exists("chatbot_log.txt")):
+        f = open("chatbot_log.txt","a")
+    else:
+        f = open("chatbot_log.txt","w")
+    f.write("\n\nRead {!s} sentence pairs".format(len(pairs)))
+    f.write("\nTrimmed to {!s} sentence pairs".format(len(pairs)))
+    f.write("\nMax Sentence Length to consider: {!s}".format(Max_Sentence_Length))
+    f.write("\nNumber of training iterations: {!s}".format(Number_Iterations))
+    f.write("\nTotal number of words: " + str(voc.num_words) + "\n")
+    f.close
+
 def evaluateInput(encoder, decoder, searcher, voc):
+    makeLogFile(voc)
     input_sentence = ''
     while(1):
         try:
@@ -543,12 +552,12 @@ def evaluateInput(encoder, decoder, searcher, voc):
             # input_sentence = input_sentence + random_letter_append
             # Normalize sentence
             input_sentence = normalizeString(input_sentence)
-            print(input_sentence)
+            # print(input_sentence)
             # Evaluate sentence
             output_words = evaluate(encoder, decoder, searcher, voc, input_sentence)
             # Format and print response sentence
             output_words[:] = [x for x in output_words if not (x == 'EOS' or x == 'PAD')]
-            print('Bot:', ' '.join(output_words))
+            print('0005:', ' '.join(output_words))
 
         except KeyError:
             print("Error: Encountered unknown word.")
@@ -565,11 +574,11 @@ dropout = 0.1
 batch_size = 64
 
 # Set checkpoint to load from; set to None if starting from scratch
-# loadFilename = None
+loadFilename = None
 checkpoint_iter = 15000
-loadFilename = os.path.join(save_dir, model_name, corpus_name,
-                            '{}-{}_{}'.format(encoder_n_layers, decoder_n_layers, hidden_size),
-                            '{}_checkpoint.tar'.format(checkpoint_iter))
+# loadFilename = os.path.join(save_dir, model_name, corpus_name,
+#                            '{}-{}_{}'.format(encoder_n_layers, decoder_n_layers, hidden_size),
+#                            '{}_checkpoint.tar'.format(checkpoint_iter))
 
 
 # Load model if a loadFilename is provided

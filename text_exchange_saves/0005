@@ -1,11 +1,12 @@
 This unit iteration will be training on the lines from the top 50 movies, select Yahoo! Answers questions, and now selected WIKI QA questions.
 
 Number of Training Iterations: 15000
-Pairs of Input Data Trained On: 226319
-Trimmed to: 97422
-Unique words: 11994
-Max Sentence Length to Consider: 13
-Average Loss Started: 9.3875
+Pairs of Input Data Trained On:  18707175 sentence pairs
+Trimmed to: 18696555 sentence pairs
+Unique words: 667319
+
+Max Sentence Length to Consider: 50
+Average Loss Started: 12.7394
 Average Loss Ended:
 
 - Be sure to ask the standard set of questions, who/what/where are you? what time is it? how do you eat an apple? what color is a zebra? etc.
@@ -13,15 +14,18 @@ Average Loss Ended:
 this would improve the likelyhood of unique answers. The random value should be small so as not to have much influence on the interpretation of the input and may only need 1 - 10
 different characters appended one at a time. This would have to be done in the python code.
 
-Two lines have been added to evaluateInput function in order to increase randomness of replies.
-		random_letter_append = random.choice('a','b','c','d','e')
-            	input_sentence = input_sentence + random_letter_append
-
 We now have additional data, though only another 1000 lines, not very much, and a bit of new code to aid in unique output generation when given the same input.
 Let's test - with 15k iterations at 13 words per sentence seem like a good average. We should aim for an average loss of < 2 or 2.5 at most.
 
 Should also consider updating the script to print information provided in the format desired as shown above.
 
 Also need to make a github repo for this.
+
+I kind of went ham and add 2 million lines of reddit convo data, let's see what happens.
+
+Of course, it takes a lot of memory to be able to create such a large dictionary struct so I had to upgrade the VM to 32gigs of RAM. Hopefully that does the trick.
+What is very interesting is that after having upgraded the RAM it the script seems to achieve more appropriate memory usage and is now staying under 16 gigs.
+
+
 
 
