@@ -10,22 +10,23 @@ Average Loss Started: 12.7394
 Average Loss Ended:
 
 - Be sure to ask the standard set of questions, who/what/where are you? what time is it? how do you eat an apple? what color is a zebra? etc.
-- I've previously concluded that a repeated input will give the same output, so the question is, do we begin to append input to the end of a typical input? If we used a randomiser
-this would improve the likelyhood of unique answers. The random value should be small so as not to have much influence on the interpretation of the input and may only need 1 - 10
-different characters appended one at a time. This would have to be done in the python code.
+- I've previously concluded that a repeated input will give the same output, so the question is, do we begin to append input to the end of a typical input? 
+If we used a randomiser this would improve the likelyhood of unique answers. The random value should be small so as not to have much 
+influence on the interpretation of the input and may only need 1 - 10 different characters appended one at a time. This would have to 
+be done in the python code.
 
-We now have additional data, though only another 1000 lines, not very much, and a bit of new code to aid in unique output generation when given the same input.
-Let's test - with 15k iterations at 13 words per sentence seem like a good average. We should aim for an average loss of < 2 or 2.5 at most.
+Should also consider updating the script to print information provided in the format desired as shown above?
 
-Should also consider updating the script to print information provided in the format desired as shown above.
-
-Also need to make a github repo for this.
+Also need to make a github repo for this. DONE
 
 I kind of went ham and add 2 million lines of reddit convo data, let's see what happens.
 
-Of course, it takes a lot of memory to be able to create such a large dictionary struct so I had to upgrade the VM to 32gigs of RAM. Hopefully that does the trick.
-What is very interesting is that after having upgraded the RAM it the script seems to achieve more appropriate memory usage and is now staying under 16 gigs.
+Of course, it takes a lot of memory to be able to create such a large dictionary struct so I had to upgrade the VM to 32gigs of RAM.
+Hopefully that does the trick. What is very interesting is that after having upgraded the RAM the script seems to achieve more
+appropriate memory usage and is now staying under 16 gigs.
 
+It has been 36 hours and we are now at iteration 2210, after doing the math for where we were in aproximately 12 hours it comes out
+to an estimated 10 days of training time. This is a little crazy. I did a little experimenting with a GCP VM utilizing an NVidia Titan 4,
+as only Nvidia cards have cude and though there is ROCm for AMD GPUs the RX 6700 XT I use for my main desktop is not supported.
 
-
-
+I suppose I'll update again once this thing is finally done running. I should consider running this on personal hardware if it's going to take this long.
